@@ -1,0 +1,520 @@
+[
+  {
+    "id": "D_S01",
+    "category": "structured_numeric",
+    "question": "What was Meta's revenue in Q2 2026?",
+    "expected_route": "structured",
+    "expected_status": "SUPPORTED",
+    "expected_value": 60801,
+    "expected_unit": "USD millions",
+    "source_set": "development_40",
+    "source_question_id": "S01"
+  },
+  {
+    "id": "D_S02",
+    "category": "structured_numeric",
+    "question": "What was Meta's revenue in Q2 2025?",
+    "expected_route": "structured",
+    "expected_status": "SUPPORTED",
+    "expected_value": 47516,
+    "expected_unit": "USD millions",
+    "source_set": "development_40",
+    "source_question_id": "S02"
+  },
+  {
+    "id": "D_S03",
+    "category": "structured_numeric",
+    "question": "What were Meta's costs and expenses in Q2 2026?",
+    "expected_route": "structured",
+    "expected_status": "SUPPORTED",
+    "expected_value": 42026,
+    "expected_unit": "USD millions",
+    "source_set": "development_40",
+    "source_question_id": "S03"
+  },
+  {
+    "id": "D_S04",
+    "category": "structured_numeric",
+    "question": "What were Meta's costs and expenses in Q2 2025?",
+    "expected_route": "structured",
+    "expected_status": "SUPPORTED",
+    "expected_value": 27075,
+    "expected_unit": "USD millions",
+    "source_set": "development_40",
+    "source_question_id": "S04"
+  },
+  {
+    "id": "D_S05",
+    "category": "structured_numeric",
+    "question": "What was Meta's operating income in Q2 2026?",
+    "expected_route": "structured",
+    "expected_status": "SUPPORTED",
+    "expected_value": 18775,
+    "expected_unit": "USD millions",
+    "source_set": "development_40",
+    "source_question_id": "S05"
+  },
+  {
+    "id": "D_S06",
+    "category": "structured_numeric",
+    "question": "What was Meta's operating income in Q2 2025?",
+    "expected_route": "structured",
+    "expected_status": "SUPPORTED",
+    "expected_value": 20441,
+    "expected_unit": "USD millions",
+    "source_set": "development_40",
+    "source_question_id": "S06"
+  },
+  {
+    "id": "D_S07",
+    "category": "structured_numeric",
+    "question": "What was Meta's operating margin in Q2 2026?",
+    "expected_route": "structured",
+    "expected_status": "SUPPORTED",
+    "expected_value": 31,
+    "expected_unit": "percent",
+    "source_set": "development_40",
+    "source_question_id": "S07"
+  },
+  {
+    "id": "D_S08",
+    "category": "structured_numeric",
+    "question": "What was Meta's operating margin in Q2 2025?",
+    "expected_route": "structured",
+    "expected_status": "SUPPORTED",
+    "expected_value": 43,
+    "expected_unit": "percent",
+    "source_set": "development_40",
+    "source_question_id": "S08"
+  },
+  {
+    "id": "D_S09",
+    "category": "structured_numeric",
+    "question": "What was Meta's net income in Q2 2026?",
+    "expected_route": "structured",
+    "expected_status": "SUPPORTED",
+    "expected_value": 15848,
+    "expected_unit": "USD millions",
+    "source_set": "development_40",
+    "source_question_id": "S09"
+  },
+  {
+    "id": "D_S10",
+    "category": "structured_numeric",
+    "question": "What was Meta's capital expenditure in Q2 2026?",
+    "expected_route": "structured",
+    "expected_status": "SUPPORTED",
+    "expected_value": 31080,
+    "expected_unit": "USD millions",
+    "source_set": "development_40",
+    "source_question_id": "S10"
+  },
+  {
+    "id": "D_R01",
+    "category": "structured_robustness",
+    "question": "How much revenue did Meta report for Q2 2026?",
+    "expected_route": "structured",
+    "expected_status": "SUPPORTED",
+    "expected_value": 60801,
+    "expected_unit": "USD millions",
+    "source_set": "development_40",
+    "source_question_id": "R01"
+  },
+  {
+    "id": "D_R02",
+    "category": "structured_robustness",
+    "question": "What was Meta's operating profit in Q2 2026?",
+    "expected_route": "structured",
+    "expected_status": "SUPPORTED",
+    "expected_value": 18775,
+    "expected_unit": "USD millions",
+    "source_set": "development_40",
+    "source_question_id": "R02"
+  },
+  {
+    "id": "D_R03",
+    "category": "structured_robustness",
+    "question": "How large were Meta's total costs and expenses in Q2 2026?",
+    "expected_route": "structured",
+    "expected_status": "SUPPORTED",
+    "expected_value": 42026,
+    "expected_unit": "USD millions",
+    "source_set": "development_40",
+    "source_question_id": "R03"
+  },
+  {
+    "id": "D_N01",
+    "category": "narrative",
+    "question": "Why did Meta's operating income decline in Q2 2026?",
+    "expected_route": "narrative",
+    "expected_status": "SUPPORTED",
+    "source_set": "development_40",
+    "source_question_id": "N01"
+  },
+  {
+    "id": "D_N02",
+    "category": "narrative",
+    "question": "Why did Meta increase capital expenditures?",
+    "expected_route": "narrative",
+    "expected_status": "SUPPORTED",
+    "source_set": "development_40",
+    "source_question_id": "N02"
+  },
+  {
+    "id": "D_N03",
+    "category": "narrative",
+    "question": "What did Meta say about its 2026 capital expenditure outlook?",
+    "expected_route": "narrative",
+    "expected_status": "SUPPORTED",
+    "source_set": "development_40",
+    "source_question_id": "N03"
+  },
+  {
+    "id": "D_N04",
+    "category": "narrative",
+    "question": "What was Meta's Q3 2026 revenue guidance?",
+    "expected_route": "narrative",
+    "expected_status": "SUPPORTED",
+    "source_set": "development_40",
+    "source_question_id": "N04"
+  },
+  {
+    "id": "D_A01",
+    "category": "abstention",
+    "question": "What was Meta's cloud revenue in Q2 2026?",
+    "expected_route": "structured",
+    "expected_status": "INSUFFICIENT",
+    "source_set": "development_40",
+    "source_question_id": "A01"
+  },
+  {
+    "id": "D_A02",
+    "category": "abstention",
+    "question": "What was Meta's AWS revenue in Q2 2026?",
+    "expected_route": "structured",
+    "expected_status": "INSUFFICIENT",
+    "source_set": "development_40",
+    "source_question_id": "A02"
+  },
+  {
+    "id": "D_A03",
+    "category": "abstention",
+    "question": "What was Meta's banking revenue in Q2 2026?",
+    "expected_route": "structured",
+    "expected_status": "INSUFFICIENT",
+    "source_set": "development_40",
+    "source_question_id": "A03"
+  },
+  {
+    "id": "D_A04",
+    "category": "abstention",
+    "question": "What was Meta's Q2 2027 revenue?",
+    "expected_route": "structured",
+    "expected_status": "INSUFFICIENT",
+    "source_set": "development_40",
+    "source_question_id": "A04"
+  },
+  {
+    "id": "D_U01",
+    "category": "unsupported",
+    "question": "What is Meta's stock price target?",
+    "expected_route": "unsupported",
+    "expected_status": "UNSUPPORTED",
+    "source_set": "development_40",
+    "source_question_id": "U01"
+  },
+  {
+    "id": "D_U02",
+    "category": "unsupported",
+    "question": "What is Meta's current share price?",
+    "expected_route": "unsupported",
+    "expected_status": "UNSUPPORTED",
+    "source_set": "development_40",
+    "source_question_id": "U02"
+  },
+  {
+    "id": "D_U03",
+    "category": "unsupported",
+    "question": "How old is Meta's CEO?",
+    "expected_route": "unsupported",
+    "expected_status": "UNSUPPORTED",
+    "source_set": "development_40",
+    "source_question_id": "U03"
+  },
+  {
+    "id": "D_U04",
+    "category": "unsupported",
+    "question": "How many Meta employees work in Europe?",
+    "expected_route": "unsupported",
+    "expected_status": "UNSUPPORTED",
+    "source_set": "development_40",
+    "source_question_id": "U04"
+  },
+  {
+    "id": "H_S11",
+    "category": "structured_numeric",
+    "question": "How much cash flow from operations did Meta produce in Q2 2026?",
+    "expected_route": "structured",
+    "expected_status": "SUPPORTED",
+    "expected_value": 31862,
+    "expected_unit": "USD millions",
+    "source_set": "original_50",
+    "source_question_id": "S11"
+  },
+  {
+    "id": "H_S12",
+    "category": "structured_numeric",
+    "question": "How much free cash flow did Meta generate during Q2 2026?",
+    "expected_route": "structured",
+    "expected_status": "SUPPORTED",
+    "expected_value": 784,
+    "expected_unit": "USD millions",
+    "source_set": "original_50",
+    "source_question_id": "S12"
+  },
+  {
+    "id": "H_S13",
+    "category": "structured_numeric",
+    "question": "What was the combined balance of Meta's cash and marketable securities at June 30, 2026?",
+    "expected_route": "structured",
+    "expected_status": "SUPPORTED",
+    "expected_value": 90260,
+    "expected_unit": "USD millions",
+    "source_set": "original_50",
+    "source_question_id": "S13"
+  },
+  {
+    "id": "H_S14",
+    "category": "structured_numeric",
+    "question": "State Meta's long-term debt balance at the end of June 2026.",
+    "expected_route": "structured",
+    "expected_status": "SUPPORTED",
+    "expected_value": 83664,
+    "expected_unit": "USD millions",
+    "source_set": "original_50",
+    "source_question_id": "S14"
+  },
+  {
+    "id": "H_S15",
+    "category": "structured_numeric",
+    "question": "What was Meta's asset base as of June 30, 2026?",
+    "expected_route": "structured",
+    "expected_status": "SUPPORTED",
+    "expected_value": 449956,
+    "expected_unit": "USD millions",
+    "source_set": "original_50",
+    "source_question_id": "S15"
+  },
+  {
+    "id": "H_S16",
+    "category": "structured_numeric",
+    "question": "How much revenue did Family of Apps generate in Q2 2026?",
+    "expected_route": "structured",
+    "expected_status": "SUPPORTED",
+    "expected_value": 60370,
+    "expected_unit": "USD millions",
+    "source_set": "original_50",
+    "source_question_id": "S16"
+  },
+  {
+    "id": "H_S17",
+    "category": "structured_numeric",
+    "question": "What was Reality Labs revenue in the second quarter of 2026?",
+    "expected_route": "structured",
+    "expected_status": "SUPPORTED",
+    "expected_value": 431,
+    "expected_unit": "USD millions",
+    "source_set": "original_50",
+    "source_question_id": "S17"
+  },
+  {
+    "id": "H_S18",
+    "category": "structured_numeric",
+    "question": "How much operating income did Family of Apps produce during Q2 2026?",
+    "expected_route": "structured",
+    "expected_status": "SUPPORTED",
+    "expected_value": 23394,
+    "expected_unit": "USD millions",
+    "source_set": "original_50",
+    "source_question_id": "S18"
+  },
+  {
+    "id": "H_S19",
+    "category": "structured_numeric",
+    "question": "What operating loss did Reality Labs report for Q2 2026?",
+    "expected_route": "structured",
+    "expected_status": "SUPPORTED",
+    "expected_value": -4619,
+    "expected_unit": "USD millions",
+    "source_set": "original_50",
+    "source_question_id": "S19"
+  },
+  {
+    "id": "H_S20",
+    "category": "structured_numeric",
+    "question": "What was Meta's diluted earnings per share in Q2 2026?",
+    "expected_route": "structured",
+    "expected_status": "SUPPORTED",
+    "expected_value": 6.18,
+    "expected_unit": "USD per share",
+    "source_set": "original_50",
+    "source_question_id": "S20"
+  },
+  {
+    "id": "H_R06",
+    "category": "structured_robustness",
+    "question": "What was Meta's FCF for the June 2026 quarter?",
+    "expected_route": "structured",
+    "expected_status": "SUPPORTED",
+    "expected_value": 784,
+    "expected_unit": "USD millions",
+    "source_set": "original_50",
+    "source_question_id": "R06"
+  },
+  {
+    "id": "H_R07",
+    "category": "structured_robustness",
+    "question": "How much liquidity did Meta hold in cash and marketable securities at quarter end?",
+    "expected_route": "structured",
+    "expected_status": "SUPPORTED",
+    "expected_value": 90260,
+    "expected_unit": "USD millions",
+    "source_set": "original_50",
+    "source_question_id": "R07"
+  },
+  {
+    "id": "H_R08",
+    "category": "structured_robustness",
+    "question": "What was Meta's long-term borrowing balance at June 30, 2026?",
+    "expected_route": "structured",
+    "expected_status": "SUPPORTED",
+    "expected_value": 83664,
+    "expected_unit": "USD millions",
+    "source_set": "original_50",
+    "source_question_id": "R08"
+  },
+  {
+    "id": "H_R09",
+    "category": "structured_robustness",
+    "question": "How large was Meta's total asset base at the end of Q2 2026?",
+    "expected_route": "structured",
+    "expected_status": "SUPPORTED",
+    "expected_value": 449956,
+    "expected_unit": "USD millions",
+    "source_set": "original_50",
+    "source_question_id": "R09"
+  },
+  {
+    "id": "H_R10",
+    "category": "structured_robustness",
+    "question": "What was Meta's bottom-line profit in Q2 2026?",
+    "expected_route": "structured",
+    "expected_status": "SUPPORTED",
+    "expected_value": 15848,
+    "expected_unit": "USD millions",
+    "source_set": "original_50",
+    "source_question_id": "R10"
+  },
+  {
+    "id": "H_N01",
+    "category": "narrative",
+    "question": "What revenue range did Meta guide to for the third quarter of 2026?",
+    "expected_route": "narrative",
+    "expected_status": "SUPPORTED",
+    "expected_contains": [
+      "61",
+      "64"
+    ],
+    "source_set": "original_50",
+    "source_question_id": "N01"
+  },
+  {
+    "id": "H_N02",
+    "category": "narrative",
+    "question": "What full-year 2026 capital expenditure range did management provide?",
+    "expected_route": "narrative",
+    "expected_status": "SUPPORTED",
+    "expected_contains": [
+      "130",
+      "145"
+    ],
+    "source_set": "original_50",
+    "source_question_id": "N02"
+  },
+  {
+    "id": "H_N05",
+    "category": "narrative",
+    "question": "What investment area did Meta identify as an important driver of higher capital spending?",
+    "expected_route": "narrative",
+    "expected_status": "SUPPORTED",
+    "expected_contains": [
+      "AI",
+      "infrastructure"
+    ],
+    "source_set": "original_50",
+    "source_question_id": "N05"
+  },
+  {
+    "id": "H_A06",
+    "category": "abstention",
+    "question": "What was Meta's Q2 2026 cloud free cash flow?",
+    "expected_route": "structured",
+    "expected_status": "INSUFFICIENT",
+    "source_set": "original_50",
+    "source_question_id": "A06"
+  },
+  {
+    "id": "H_A07",
+    "category": "abstention",
+    "question": "What was Meta's fintech revenue in Q2 2026?",
+    "expected_route": "structured",
+    "expected_status": "INSUFFICIENT",
+    "source_set": "original_50",
+    "source_question_id": "A07"
+  },
+  {
+    "id": "H_A08",
+    "category": "abstention",
+    "question": "How much banking income did Meta earn in Q2 2026?",
+    "expected_route": "structured",
+    "expected_status": "INSUFFICIENT",
+    "source_set": "original_50",
+    "source_question_id": "A08"
+  },
+  {
+    "id": "H_A09",
+    "category": "abstention",
+    "question": "What was Meta's Q4 2026 revenue?",
+    "expected_route": "structured",
+    "expected_status": "INSUFFICIENT",
+    "source_set": "original_50",
+    "source_question_id": "A09"
+  },
+  {
+    "id": "H_A10",
+    "category": "abstention",
+    "question": "What was Meta's net income for 2027?",
+    "expected_route": "structured",
+    "expected_status": "INSUFFICIENT",
+    "source_set": "original_50",
+    "source_question_id": "A10"
+  },
+  {
+    "id": "H_U04",
+    "category": "unsupported",
+    "question": "What is Mark Zuckerberg's current age?",
+    "expected_route": "unsupported",
+    "expected_status": "UNSUPPORTED",
+    "source_set": "original_50",
+    "source_question_id": "U04"
+  },
+  {
+    "id": "H_U05",
+    "category": "unsupported",
+    "question": "What is Meta's market capitalization today?",
+    "expected_route": "unsupported",
+    "expected_status": "UNSUPPORTED",
+    "source_set": "original_50",
+    "source_question_id": "U05"
+  }
+]

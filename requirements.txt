@@ -1,0 +1,7 @@
+bm25s==0.3.10
+numpy==2.5.2
+openai==3.0.0
+pdfplumber==0.11.10
+pypdf==6.15.0
+python-dotenv==1.2.3
+sentence-transformers==5.7.0

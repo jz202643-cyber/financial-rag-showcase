@@ -1,0 +1,27 @@
+# Virtual environments
+.venv/
+venv/
+
+# Python cache / build artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+build/
+dist/
+*.egg-info/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# OS / editor noise
+.DS_Store
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# Local backups / logs
+*.backup
+*.bak
+*.log
