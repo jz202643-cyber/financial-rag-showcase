@@ -149,7 +149,7 @@
     "end_date": "June 30",
     "year": 2026,
     "raw_value": "2,908",
-    "unit": "percent",
+    "unit": "USD millions",
     "value": 2908
   },
   {
@@ -166,7 +166,7 @@
     "end_date": "June 30",
     "year": 2025,
     "raw_value": "2,197",
-    "unit": "percent",
+    "unit": "USD millions",
     "value": 2197
   },
   {
@@ -251,7 +251,7 @@
     "end_date": "June 30",
     "year": 2026,
     "raw_value": "6.18",
-    "unit": "percent",
+    "unit": "USD per share",
     "value": 6.18
   },
   {
@@ -268,7 +268,7 @@
     "end_date": "June 30",
     "year": 2025,
     "raw_value": "7.14",
-    "unit": "percent",
+    "unit": "USD per share",
     "value": 7.14
   },
   {

@@ -1,5 +1,7 @@
 # Financial RAG — Evidence-Grounded Financial Document QA
 
+**Release candidate: v1.1** — targeted reliability improvements to the original public showcase.
+
 A portfolio-scale **financial document intelligence system** for answering questions from corporate earnings materials with explicit evidence, deterministic financial fact retrieval, hybrid narrative retrieval, and safe abstention when the available evidence is insufficient.
 
 This showcase is built around **Meta Platforms' Q2 2026 earnings materials** and is designed to demonstrate the architecture and reliability principles behind a domain-specific Financial RAG system rather than to act as a general-purpose financial assistant.
@@ -121,7 +123,13 @@ operating_income
 
 ### Qualifier safety
 
-The system is designed to avoid silently dropping unresolved qualifiers. For example, a question about a non-existent `cloud revenue` metric should not collapse into total company revenue simply because the words `revenue` and `Meta` are present.
+A registry-driven qualifier parser detects unresolved sub-business restrictions across registered financial metrics, including common prefix and suffix forms (`cloud operating margin`, `operating margin for cloud`). A structured evidence safety gate abstains rather than treating such a question as company-wide. Recognized segments are parsed separately; segment fact coverage remains limited.
+
+Explicit comparative questions such as `revenue in Q2 2026 compared with Q2 2025` are not treated as a single-period fact request. Until multi-period comparison answering is supported, the structured path returns `INSUFFICIENT` rather than a misleading one-period answer.
+
+### Cell-level financial units
+
+Layout-aware fact extraction assigns units to **individual table cells**, combining metric-level semantics and each cell's own representation. This prevents a YoY `%` column from turning adjacent monetary values into percentages. Per-share metrics retain `USD per share` rather than inheriting the table's `USD millions` default. Four previously exported unit errors in the included JSON fact store were corrected in v1.1.
 
 ### Explicit provenance
 
@@ -154,7 +162,9 @@ What is Meta's stock price target?
 
 The first four are expected to retrieve evidence-backed structured facts. The last two test abstention and out-of-scope handling.
 
-## Portfolio benchmark
+## Historical portfolio benchmark (pre-v1.1)
+
+> **Versioning note:** The results below were produced with the initial public showcase and are retained for historical transparency. They have **not** been rerun on the v1.1 candidate, so these numbers are **not v1.1 benchmark results**. See `RELEASE_NOTES_v1.1.md` for the narrower validation performed on v1.1.
 
 The repository includes a **50-case curated financial QA benchmark** consisting of:
 
@@ -269,6 +279,16 @@ The `.env` file is excluded from version control and should never be committed.
 
 The narrative path is deliberately downstream of evidence validation: the LLM does not decide whether the evidence is sufficient.
 
+## Run tests
+
+After installing dependencies, run:
+
+```bash
+PYTHONPATH=src python -m pytest tests/ -q
+```
+
+The structured-path regression tests use import stubs for the heavyweight narrative retriever and LLM generator, while exercising real structured routing and fact retrieval. They **do not** establish narrative-retrieval or full benchmark performance. Install `pytest` separately if it is not in your environment (`python -m pip install pytest`).
+
 ## Run the benchmark
 
 ```bash
@@ -284,6 +304,9 @@ Narrative benchmark cases require a configured LLM endpoint. Without one, struct
 This repository is a **portfolio showcase**, not a production financial research platform.
 
 Current limitations include:
+
+- v1.1 has passed targeted regression checks but has not been re-evaluated on the complete 50-case curated benchmark;
+- explicit multi-period comparisons safely abstain instead of computing an incomplete comparison;
 
 - the showcase is centred on one company and one reporting package;
 - the 50-case benchmark is curated and should not be interpreted as a held-out generalisation result;
@@ -307,7 +330,7 @@ The broader research direction is **reliability-first financial document intelli
 
 ## Project status
 
-This repository is a frozen showcase version intended to present the core architecture, evaluation framework, and reliability-oriented design choices. Ongoing research and experimental work are maintained separately.
+This repository is a versioned showcase of the core architecture, evaluation framework, and reliability-oriented design choices. Ongoing research and experimental work are maintained separately. This v1.1 package is a **release candidate**, not yet a verified production release.
 
 ---
 

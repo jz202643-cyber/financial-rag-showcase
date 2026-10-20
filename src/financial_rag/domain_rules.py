@@ -176,22 +176,16 @@ def apply_domain_rules(
     # from collapsing into total-company metrics.
     # --------------------------------------------------------
 
-    unsupported_qualifiers = [
-        "cloud",
-        "aws",
-        "banking",
-    ]
-
-    if (
-        metric is not None
-        and any(
-            qualifier in q
-            for qualifier in unsupported_qualifiers
-        )
-    ):
-        parsed_query[
-            "qualifier_status"
-        ] = "unresolved"
+    # Qualifiers for registered metrics are now handled by
+    # query_parser.extract_metric_qualifier (pre- and post-metric).
+    # Retain a narrow defensive rule for showcase-specific
+    # aliases not recognized by the registry.
+    if metric is not None and parsed_query.get("metric_concept") is None:
+        if any(
+            re.search(r"\b" + re.escape(word) + r"\b", q)
+            for word in ("cloud", "aws", "banking")
+        ):
+            parsed_query["qualifier_status"] = "unresolved"
 
 
     # --------------------------------------------------------

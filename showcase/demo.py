@@ -22,6 +22,12 @@ TEST_CASES = [
     ("ABSTENTION",
      "What was Meta's cloud revenue in Q2 2026?"),
 
+    ("ABSTENTION — QUALIFIER",
+     "What was Meta's operating margin for cloud in Q2 2026?"),
+
+    ("ABSTENTION — COMPARISON",
+     "What was Meta's revenue in Q2 2026 compared with Q2 2025?"),
+
     ("ABSTENTION",
      "What is Meta's stock price target?"),
 

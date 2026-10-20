@@ -1,4 +1,5 @@
 from pathlib import Path
+import re
 
 from .query_understanding.query_parser import (
     parse_query,
@@ -127,6 +128,22 @@ def answer_question(question):
                 "matches": [],
             }
 
+
+        # A single-fact answer cannot establish a comparison.
+        # Avoid returning one period's value as if it answered
+        # an explicitly comparative question.
+        if re.search(
+            r"\b(?:compared\s+(?:to|with)|versus|vs\.?|relative\s+to)\b",
+            question,
+            flags=re.IGNORECASE,
+        ):
+            return {
+                "status": "INSUFFICIENT",
+                "route": "structured",
+                "query": parsed_query,
+                "reason": "Multi-period comparison requires additional evidence.",
+                "matches": [],
+            }
 
         facts = load_financial_facts(
             FACTS_PATH
