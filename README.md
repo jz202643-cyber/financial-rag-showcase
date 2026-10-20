@@ -1,6 +1,6 @@
 # Financial RAG — Evidence-Grounded Financial Document QA
 
-**Release candidate: v1.1** — targeted reliability improvements to the original public showcase.
+**Release: v1.1** — targeted reliability improvements to the original public showcase.
 
 A portfolio-scale **financial document intelligence system** for answering questions from corporate earnings materials with explicit evidence, deterministic financial fact retrieval, hybrid narrative retrieval, and safe abstention when the available evidence is insufficient.
 
